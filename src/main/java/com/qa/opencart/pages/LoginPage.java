@@ -18,8 +18,9 @@ public class LoginPage {
 	private By forgotPwdLink = By.linkText("Forgotten Password");
 	private By logo = By.cssSelector("img[title='naveenopencart']");
 	private By newCustomerLink = By.linkText("Continue");
-	
 	private By registerLink = By.linkText("Register");
+	
+	private By niranjan = By.linkText("niranjan");
 	
 	//constructor to assign the driver
 	public LoginPage(WebDriver driver) {
