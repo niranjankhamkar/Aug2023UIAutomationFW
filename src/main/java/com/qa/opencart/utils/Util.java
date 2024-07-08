@@ -1,6 +1,6 @@
 package com.qa.opencart.utils;
 
-public class util {
+public class Util {
 	
 	
 	int i = 10;
