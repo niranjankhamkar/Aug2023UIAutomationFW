@@ -23,7 +23,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.qa.opencart.exception.FrameworkException;
 import com.qa.opencart.factory.DriverFactory;
 
-//import io.qameta.allure.Step;
+import io.qameta.allure.Step;
+
+
 
 public class ElementUtil {
 
@@ -86,12 +88,12 @@ public class ElementUtil {
 		getElement(locatorType, locatorValue).sendKeys(value);
 	}
 
-	//@Step("entering value {1} to element: {0}")
+	@Step("entering value {1} to element: {0}")
 	public void doSendKeys(By locator, String value) {
 		getElement(locator).sendKeys(value);
 	}
 
-	//@Step("clicking on element : {0}")
+	@Step("clicking on element : {0}")
 	public void doClick(By locator) {
 		getElement(locator).click();
 	}
@@ -384,7 +386,7 @@ public class ElementUtil {
 	 * @param timeOut
 	 * @return
 	 */
-	//@Step("waiting for element: {0} with timeout {1}")
+	@Step("waiting for element: {0} with timeout {1}")
 	public WebElement waitForVisibilityOfElement(By locator, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -450,7 +452,7 @@ public class ElementUtil {
 
 	}
 
-	//@Step("waiting for the page title : {0} and titmeout: {1}")
+	@Step("waiting for the page title : {0} and timeout: {1}")	//0-titlr 1-timeout
 	public String waitForTitleIs(String title, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 
@@ -466,7 +468,7 @@ public class ElementUtil {
 
 	}
 
-	//@Step("waiting for url : {0} and timeout{1}")
+	@Step("waiting for url : {0} and timeout{1}")
 	public String waitForURLContains(String urlFraction, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 

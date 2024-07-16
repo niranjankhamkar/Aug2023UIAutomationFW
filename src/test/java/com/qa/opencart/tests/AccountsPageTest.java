@@ -2,8 +2,6 @@ package com.qa.opencart.tests;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -17,7 +15,8 @@ public class AccountsPageTest extends BaseTest {
 	public void accSetUp() {
 		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
-
+	
+	
 	@Test
 	public void accPageTitleTest() {
 		Assert.assertEquals(accPage.getAccPageTitle(), AppConstants.ACCOUNTS_PAGE_TITLE);

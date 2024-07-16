@@ -70,7 +70,7 @@ public class JavaScriptUtil {
 	}
 	
 	public void pageRefreshWithJS() {
-		js.executeScript("history.go(0)");
+ 		js.executeScript("history.go(0)");
 	}
 	
 	public String getPageInnerText() {
