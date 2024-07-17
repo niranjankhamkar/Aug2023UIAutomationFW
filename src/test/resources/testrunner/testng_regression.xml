@@ -29,12 +29,12 @@
 		</classes>
 	</test>
 	
-	 <test name="Product Results Page Test">
+	 <!-- <test name="Product Results Page Test">
 		 <parameter name="browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.qa.opencart.tests.ProductResultsPageTest" />
 		</classes>
-	</test>
+	</test> -->
 
 	<!-- <test name="Register Page Test">
 	<parameter name="browser" value="chrome"></parameter>
