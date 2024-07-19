@@ -22,6 +22,7 @@ public class LoginPage {
 	private By newCustomerLink = By.linkText("Continue");
 	private By registerLink = By.linkText("Register");
 	
+	int i=10;
 	
 	//constructor to assign the driver
 	public LoginPage(WebDriver driver) {
