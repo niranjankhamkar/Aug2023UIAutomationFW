@@ -33,7 +33,7 @@ public class DriverFactory {
 		String browserName = prop.getProperty("browser");
 		// String browserName = System.getProperty("browser");
 
-		System.out.println("browser name is: " + browserName);
+		System.out.println("In DriverFactory browser name is: " + browserName);
 
 		highlight = prop.getProperty("highlight");
 
@@ -89,7 +89,7 @@ public class DriverFactory {
 		prop = new Properties();
 
 		String envName = System.getProperty("env");
-		System.out.println("env name is: " + envName);
+		System.out.println("In Driver Factory env name is: " + envName);
 
 		try {
 			if (envName == null) {
