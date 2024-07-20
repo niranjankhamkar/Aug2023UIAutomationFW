@@ -37,7 +37,7 @@ public class BaseTest {
 		prop = df.initProp();
 		
 		if(browserName!=null) {
-			prop.setProperty("browser", browserName);
+			prop.setProperty(browserName , "browser" );
 			
 		}
 		
