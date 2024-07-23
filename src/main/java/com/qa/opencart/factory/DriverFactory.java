@@ -30,9 +30,9 @@ public class DriverFactory {
 
 	public WebDriver initDriver(Properties prop) {
 
-		String browserName = prop.getProperty("browser");
-		// String browserName = System.getProperty("browser");
-
+		String browserName = prop.getProperty("browser");	//read it from properties (eg qa, dev.properties)
+		// String browserName = System.getProperty("browser");	//read it from environment variable (CMD -Denv="qa")
+																//from jenkins also (env,browser)
 		System.out.println("In DriverFactory browser name is: " + browserName);
 
 		highlight = prop.getProperty("highlight");
